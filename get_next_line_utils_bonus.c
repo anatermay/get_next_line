@@ -68,25 +68,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-
-/* We are working on get_next_line project and
-	we need to implement ft_strlcat, ft_strlcpy,
-	ft_strlen, ft_strjoin and ft_strchr.
-	We are going to implement these functions
-	in get_next_line_utils.c file.
-ft_strchr will be used in get_next_line.c file to
-	find the newline character in the buffer. If it
-	is found, we will return the address of the
-	newline character. If it is not found, we will
-	return NULL.
-ft_strjoin will be used in get_next_line.c file to
-	join the buffer and the line. We will allocate
-	memory for the new string and copy the buffer
-	and the line to the new string.
-ft_strlen will be used in get_next_line.c file to
-	find the length of the buffer and the line.
-ft_strlcpy will be used in get_next_line.c file to
-	copy the buffer and the line to the new string.
-ft_strlcat will be used in get_next_line.c file to
-	concatenate the buffer and the line to the new
-	string. */
