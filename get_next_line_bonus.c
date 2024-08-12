@@ -108,21 +108,3 @@ char	*get_next_line(int fd)
 	buff[fd] = ft_cub(buff[fd]);
 	return (newtl);
 }
-
-int	main(void)
-{
-	char	*line;
-	int		fd;
-
-	fd = open("test.txt", O_RDONLY);
-	line = get_next_line(fd);
-	while (line)
-	{
-		printf("%s\n", line);
-		free(line);
-		line = get_next_line(fd);
-	}
-	free(line);
-	close(fd);
-	return (0);
-}
